@@ -1,0 +1,73 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+ 
+  <attr path="/api/package[@name='uk.co.senab.actionbarpulltorefresh.library']" name="managedName">Xamarin.ActionBarPullToRefresh.Library</attr>
+  <attr path="/api/package[@name='uk.co.senab.actionbarpulltorefresh.library.delegate']" name="managedName">Xamarin.ActionBarPullToRefresh.Library.Delegates</attr>
+  <attr path="/api/package/class/field[@name='delegate']" name="managedName">DelegateField</attr>
+  <attr path="/api/package[@name='uk.co.senab.actionbarpulltorefresh.library']/class[@name='PullToRefreshAttacher.Delegate']" name="managedName">PullToRefreshAttacher.DelegateClass</attr>
+  <attr path="/api/package[@name='uk.co.senab.actionbarpulltorefresh.library']/class[@name='PullToRefreshAttacher']/constructor/parameter[@type='V']" name="type">java.lang.Object</attr>
+
+  <attr path="/api/package[@name='com.handmark.pulltorefresh.library']/class[@name='PullToRefreshListView.InternalListView']/method[@name='setEmptyView']" name="visibility">public</attr>
+
+  <attr path="/api/package[@name='com.handmark.pulltorefresh.library.internal']/class[@name='EmptyViewMethodAccessor']/method[@name='setEmptyView']" name="visibility">public</attr>
+
+  <remove-node path="/api/package[@name='com.handmark.pulltorefresh.library']/class[@name='PullToRefreshBase.SmoothScrollRunnable']" />
+ 
+
+ -->
+  <remove-node path="/api/package[@name='com.handmark.pulltorefresh.library']/interface[@name='PullToRefreshBase.OnSmoothScrollFinishedListener']" />
+  <remove-node  path="/api/package[@name='com.handmark.pulltorefresh.library.internal']/interface[@name='EmptyViewMethodAccessor']/method[@name='setEmptyView' and count(parameter)=1 and parameter[1][@type='android.view.View']]"></remove-node>
+
+
+  <attr path="/api/package[@name='com.handmark.pulltorefresh.library']/class[@name='PullToRefreshBase.Mode']" name="managedName">PullToRefreshBase.ModeType</attr>
+  <attr path="/api/package[@name='com.handmark.pulltorefresh.library']/class[@name='PullToRefreshBase.State']" name="managedName">PullToRefreshBase.StateType</attr>
+
+  <attr path="/api/package[@name='com.handmark.pulltorefresh.library']/class[@name='PullToRefreshListView.InternalListViewSDK9']" name="visibility">protected</attr>
+
+
+  <attr path="/api/package[@name='com.handmark.pulltorefresh.library.internal']/class[@name='RotateLoadingLayout']/method[@name='onLoadingDrawableSet' and count(parameter)=1 and parameter[1][@type='android.graphics.drawable.Drawable']]" name="visibility">protected</attr>
+  <attr  path="/api/package[@name='com.handmark.pulltorefresh.library']/class[@name='PullToRefreshScrollView']/method[@name='createRefreshableView' and count(parameter)=2 and parameter[1][@type='android.content.Context'] and parameter[2][@type='android.util.AttributeSet']]"
+	
+          name="managedReturn"
+>Java.Lang.Object</attr>
+
+  <attr
+     path="/api/package[@name='com.handmark.pulltorefresh.library']/class[@name='PullToRefreshExpandableListView']/method[@name='createRefreshableView' and count(parameter)=2 and parameter[1][@type='android.content.Context'] and parameter[2][@type='android.util.AttributeSet']]"
+	
+          name="managedReturn"
+>Java.Lang.Object</attr>
+  <attr
+     path="/api/package[@name='com.handmark.pulltorefresh.library']/class[@name='PullToRefreshExpandableListView.InternalExpandableListView']"
+	
+          name="managedReturn"
+>Java.Lang.Object</attr>
+  <attr
+     path="/api/package[@name='com.handmark.pulltorefresh.library']/class[@name='PullToRefreshGridView']/method[@name='createRefreshableView' and count(parameter)=2 and parameter[1][@type='android.content.Context'] and parameter[2][@type='android.util.AttributeSet']]"
+	
+          name="managedReturn"
+>Java.Lang.Object</attr>
+  <attr
+     path="/api/package[@name='com.handmark.pulltorefresh.library']/class[@name='PullToRefreshHorizontalScrollView']/method[@name='createRefreshableView' and count(parameter)=2 and parameter[1][@type='android.content.Context'] and parameter[2][@type='android.util.AttributeSet']]"
+	
+          name="managedReturn"
+>Java.Lang.Object</attr>
+
+
+  <attr
+   path="/api/package[@name='com.handmark.pulltorefresh.library']/class[@name='PullToRefreshListView']/method[@name='createRefreshableView' and count(parameter)=2 and parameter[1][@type='android.content.Context'] and parameter[2][@type='android.util.AttributeSet']]"
+	
+          name="managedReturn"
+>Java.Lang.Object</attr>
+
+
+  <attr
+  path="/api/package[@name='com.handmark.pulltorefresh.library']/class[@name='PullToRefreshWebView']/method[@name='createRefreshableView' and count(parameter)=2 and parameter[1][@type='android.content.Context'] and parameter[2][@type='android.util.AttributeSet']]"
+		
+          name="managedReturn"
+>Java.Lang.Object</attr>
+</metadata>
